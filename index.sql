@@ -1,0 +1,9 @@
+
+CREATE TABLE schools (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    name VARCHAR(300) NOT NULL,
+    address VARCHAR(300) NOT NULL,
+    latitude FLOAT NOT NULL,
+    longitude FLOAT NOT NULL
+);
+
