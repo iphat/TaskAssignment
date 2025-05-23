@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "bd82fc59-5d77-4293-a1c3-ee14ea4a1740",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "38351104-bd82fc59-5d77-4293-a1c3-ee14ea4a1740"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7000/api/getSchool",
+			"id": "aa7b658d-1c8e-4008-9475-8284fd860d56",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/getSchools",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getSchools"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/addSchool",
+			"id": "dac7f2b0-664b-4c9f-99ed-ba529e2101a5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"DPM School\",\r\n    \"address\": \"123 National Highway\",\r\n    \"latitude\": 23.7051,\r\n    \"longitude\": 57.1425\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/addSchool",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addSchool"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
